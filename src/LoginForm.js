@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 class LoginForm extends React.Component {
   constructor(props) {
@@ -21,7 +20,7 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form id="loginform" onSubmit={this.handleSubmit}>
         <label>
           <input 
           type="text" 
