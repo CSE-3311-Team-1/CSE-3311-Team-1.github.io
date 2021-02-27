@@ -39,14 +39,14 @@ class RegisterForm extends React.Component {
           <br /> <br /> <br />
           <div className='form-inputs'>
             <label htmlFor='FName' className='form-label'>
-              First Name
+              First Name: 
             </label>
               <input 
               id='FName'
               className='form-input'
               type="text" 
               name="FName"
-              placeholder="Enter your First Name"
+              placeholder="Enter your first name"
               value={this.state.value} 
               onChange={this.handleChange} 
               />
@@ -54,14 +54,14 @@ class RegisterForm extends React.Component {
           </div>
           <div className='form-inputs'>
             <label htmlFor='LName' className='form-label'>
-              Last Name
+              Last Name: 
             </label>
               <input 
               id='LName'
               className='form-input'
               type="text" 
               name="LName"
-              placeholder="Last Name"
+              placeholder="Enter your last name"
               value={this.state.value} 
               onChange={this.handleChange} 
               />
@@ -69,14 +69,14 @@ class RegisterForm extends React.Component {
           </div>
           <div className='form-inputs'>
             <label htmlFor='Email' className='form-label'>
-              Email
+              Email: 
             </label>
               <input 
               id='Email'
               className='form-input'
               type="text" 
               name="Email"
-              placeholder="Enter your Email Address"
+              placeholder="Enter your email address"
               value={this.state.value} 
               onChange={this.handleChange} 
               />
@@ -84,14 +84,14 @@ class RegisterForm extends React.Component {
           </div>
             <div className='form-inputs'>
             <label htmlFor='EmailConf' className='form-label'>
-              Confirm Email
+              Confirm Email: 
             </label>
               <input 
               id='EmailConf'
               className='form-input'
               type="text" 
               name="EmailConf"
-              placeholder="Confirm your Email Address"
+              placeholder="Re-enter your email address"
               value={this.state.value} 
               onChange={this.handleChange} 
               />
@@ -99,14 +99,14 @@ class RegisterForm extends React.Component {
             </div>
             <div className='form-inputs'>
             <label htmlFor='pass' className='form-label'>
-              Password
+              Password: 
             </label>
               <input 
               id='pass'
               className='form-input'
               type="password" 
               name="pass"
-              placeholder="password"
+              placeholder="Enter a new password"
               value={this.state.value} 
               onChange={this.handleChange} 
               />
@@ -114,14 +114,14 @@ class RegisterForm extends React.Component {
           </div>
           <div className='form-inputs'>
             <label htmlFor='passConf' className='form-label'>
-              Confirm Password
+              Confirm Password: 
               </label>
               <input 
               id='passConf'
               className='form-input'
               type="password" 
               name="passConf"
-              placeholder="Confirm password"
+              placeholder="Re-enter your password"
               value={this.state.value} 
               onChange={this.handleChange} 
               />
