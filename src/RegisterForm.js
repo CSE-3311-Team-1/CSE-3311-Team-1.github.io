@@ -31,7 +31,7 @@ class RegisterForm extends React.Component {
        
         
         <form className='form' onSubmit={this.handleSubmit}>
-          <h1>
+          <h1 className='form-title'>
             Get started with us today! Create your<br /> 
             account by fillig out the <br />
             information below.
