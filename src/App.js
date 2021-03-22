@@ -1,15 +1,20 @@
-// ReactJS Navigation from
-// https://www.golangprograms.com/how-to-create-simple-react-router-to-navigate-multiple-pages.html
-import React, { Component } from 'react';
+
+import './Components/App.css';
+import React from 'react';
+import Navbar from "./Components/Navbar/Navbar";
+
+import  { Component } from 'react'
+
+
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
  
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import Error from './components/Error';
-import Navigation from './components/Navigation';
-import Login from './components/Login';
-import Register from './components/Register';
+import Home from './Components/Home';
+import About from './Components/About';
+import Contact from './Components/Contact';
+import Error from './Components/Error';
+
+import Login from './Components/Login';
+import Register from './Components/Register';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 class App extends Component {
@@ -17,7 +22,13 @@ class App extends Component {
     return (      
        <BrowserRouter>
         <div>
-          <Navigation />
+          <Navbar />
+       
+   
+  
+   
+        
+    </div>
             <Switch>
              <Route path="/" component={Home} exact/>
              <Route path="/about" component={About}/>
@@ -26,10 +37,10 @@ class App extends Component {
              <Route path="/register" component={Register}/>
             <Route component={Error}/>
            </Switch>
-        </div> 
+     
       </BrowserRouter>
     );
   }
 }
- 
+
 export default App;
